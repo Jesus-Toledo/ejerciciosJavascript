@@ -7,7 +7,7 @@ let developers = employees.filter(
     employee => employee.department === "Developer"
 );
 //find / quiero uno
-let resultado = array.find(
+let resultado1 = array.find(
     item => condición
 );
 let employee = employees.find(
@@ -20,6 +20,7 @@ let nuevoArray = array.map(
 let greetings = names.map(
     name => `Hello ${name}`
 );
+console.log(greetings);
 //forEach / quiero recorrer y solo quiero mostrar datos // se usa for cuando requieres control de esos datos, como encontrar datos especificos
 array.forEach(item => {
     console.log(item);
@@ -34,8 +35,11 @@ countries.includes("Canada")
 let colors = ["green", "blue", "red", "yellow"];
 console.log(colors.includes("yellow"));
 //Destructuring / quiero sacar propiedades
-let employee = {
+let employee2 = {
     name: "Jesus",
     role: "Developer"
 };
 let { name, role } = employee;
+
+//transformar datos- debo usar .map()
+//Buscar uno solo - debo usar .find()
