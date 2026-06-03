@@ -43,3 +43,18 @@ let { name, role } = employee;
 
 //transformar datos- debo usar .map()
 //Buscar uno solo - debo usar .find()
+
+
+//
+function getFrontendDevelopers(employees) {
+    return employees.filter(
+        employee => employee.role === "Frontend Developer"
+    );
+}
+
+//
+function getNames(employees) {
+    return employees.map(
+        employee => employee.name
+    );
+}
