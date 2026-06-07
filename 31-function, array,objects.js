@@ -78,7 +78,7 @@ let employees = [
 ];
 
 //Ejercicio 1
- function getEmployeeNames(name) {
+ function getEmployeeNames(employees) {
     return employees.map(
         employee => employee.name
     );
@@ -88,7 +88,7 @@ let employees = [
  console.log(result);
 
  //Ejercicio 2
- function getEmployeeRoles(role) {
+ function getEmployeeRoles(employees) {
     return employees.map(
         employee => employee.role
     );
@@ -96,3 +96,23 @@ let employees = [
 
  let result =getEmployeeRoles(employees);
  console.log(result);
+
+ //Ejercicio 3
+ function getHighSalaryEmployees(employees) {
+        return employees.filter(
+            employees => employees.salary > 3000
+        );
+ }
+
+ //Ejercicio 4 
+ function findEmployeeByName(employees, name) {
+    return employees.find(
+        employees => employees.name === name
+    );
+ }
+
+ findEmployeeByName(employees, "Maria");
+
+ //Ejercicio 5
+ //Pensaria en el metodo filter para filtrar por salrio 
+ //pensaria en .map

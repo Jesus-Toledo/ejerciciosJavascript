@@ -1,4 +1,4 @@
-//filter / quiero varios
+//filter / quiero varios elementos que cumplen una condicion
 let resultado = array.filter(
     item => condición
 );
@@ -6,7 +6,7 @@ let resultado = array.filter(
 let developers = employees.filter(
     employee => employee.department === "Developer"
 );
-//find / quiero uno
+//find / quiero un elemento que cumpla una condicion
 let resultado1 = array.find(
     item => condición
 );
