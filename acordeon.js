@@ -107,3 +107,9 @@ forEach()
 // Recorrer y ejecutar acciones
 reduce()
 // Convertir muchos valores en uno
+sort()
+//Ordenar elementos
+some()
+//Hay alguno que cumpla
+every()
+//Todos cumplen?
