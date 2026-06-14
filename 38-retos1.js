@@ -191,3 +191,22 @@ let result5 = courses.some(
 );
 
 console.log(result5);
+
+//--------------------------------Bonus
+/*
+-obtener nombres - map()
+-filtrar salarios - filter()
+-buscar por ID - find()
+-sumar estudiantes - reduce()
+-verificar si existe algo - some()
+-verificar si todos cumplen - every()
+-ordenar por salarios - sort()
+*/
+
+/**
+ * 1- filter
+ * 2-find
+ * 3-map
+ * 4-reduce
+ * 5-some
+ */

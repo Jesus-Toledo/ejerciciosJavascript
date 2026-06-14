@@ -1,0 +1,67 @@
+//Ejemplo 1 de encadenamiento
+
+let employees = [
+    {
+        name: "Jesus",
+        salary: 2500
+    },
+    {
+        name: "Maria",
+        salary: 5000
+    },
+    {
+        name: "Luis",
+        salary: 4000
+    }
+];
+//Obtener únicamente los nombres de los empleados que ganan más de 3000.
+//Paso 1 filtrar
+let result = employees.filter(
+    employee => employee.salary > 3000
+);
+
+console.log(result);
+
+//Paso 2 transformar
+let result = employees
+    .filter(employee => employee.salary > 3000)
+    .map(employee => employee.name);
+
+console.log(result);
+
+//Ejemplo 2 de encadenamiento
+
+let employees = [
+    {
+        name: "Jesus",
+        salary: 2500
+    },
+    {
+        name: "Maria",
+        salary: 5000
+    },
+    {
+        name: "Luis",
+        salary: 4000
+    },
+    {
+        name: "Ana",
+        salary: 6000
+    }
+];
+
+//Empleados con salario mayor a 3000, ordenados de mayor a menor.
+
+let result = employees
+    .filter(employee => employee.salary > 3000)
+    .sort((a, b) => b.salary - a.salary);
+
+console.log(result);
+
+//UNicamente los nombre
+let result = employees
+    .filter(employee => employee.salary > 3000)
+    .sort((a, b) => b.salary - a.salary)
+    .map(employee => employee.name);
+
+console.log(result);
